@@ -128,7 +128,7 @@ typedef NS_ENUM(NSUInteger, OSRecorderState) {
     
     // create AVAudioRecorder with AAC encoding
     NSDictionary *recordSetting = [NSDictionary dictionaryWithObjectsAndKeys:
-                                   [NSNumber numberWithInt: kAudioFormatMPEG4AAC ], AVFormatIDKey,
+                                   [NSNumber numberWithInt: kAudioFormatLinearPCM ], AVFormatIDKey,
                                    [NSNumber numberWithFloat:24000.0], AVSampleRateKey,
                                    [NSNumber numberWithInt:1], AVNumberOfChannelsKey,
                                    nil];
