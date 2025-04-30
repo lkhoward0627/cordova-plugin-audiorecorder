@@ -33,9 +33,9 @@ import java.util.concurrent.TimeUnit;
 public class AudioRecorderView extends RelativeLayout {
 
     private static int AUDIO_SOURCE = MediaRecorder.AudioSource.MIC;
-    private static int OUTPUT_FORMAT = MediaRecorder.OutputFormat.MPEG_4;
-    private static String EXTENSION_FILE = "mp4";
-    private static int AUDIO_ENCODER = MediaRecorder.AudioEncoder.AAC;
+    private static int OUTPUT_FORMAT = MediaRecorder.OutputFormat.WAVE; // Use WAVE for WAV files
+    private static String EXTENSION_FILE = "wav"; // Set file extension to wav
+    private static int AUDIO_ENCODER = MediaRecorder.AudioEncoder.PCM_16BIT; // Use PCM for WAV
 
     private static int DEFAULT_VIEW_COLORS = Color.WHITE;
     private static int DEFAULT_VIEW_BACKGROUND = Color.BLACK;
